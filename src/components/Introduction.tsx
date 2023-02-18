@@ -18,11 +18,11 @@ const Introduction: React.FC = () => {
         <p className='text-center text-2xl'>
         Hi, there!
         </p>
-        <TypingText />
+        <TypingText text1='yesss' text2='njjhj' text3='hjghgh'/>
       </div>
       <div className='flex'>
         <SecondaryButton text='Read again' />
-        <PrimaryButton text='Start game' />
+        <PrimaryButton text='Start game' to='/play'/>
       </div>
 
     </div>

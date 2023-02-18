@@ -1,14 +1,14 @@
-import React from "react";
-import Popup from "reactjs-popup";
+import Popup from 'reactjs-popup';
 import "reactjs-popup/dist/index.css";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { FaScroll } from "react-icons/fa";
+import PrimaryButton from './PrimaryButton';
 
-const InstructionsPopup = () => {
+const GameChoicePopup = () => {
   return (
     <Popup
       className="p-10 pb-20"
-      trigger={<button className="flex items-center gap-2"> <FaScroll/> Instructions </button>}
+      trigger={<button>Start game</button>}
       position="right center"
       modal
     >
@@ -19,16 +19,8 @@ const InstructionsPopup = () => {
           </div>
           <div className="w-full 5xl font-bold text-center uppercase mb-5 bg-[#054e82]">Instructions</div>
           <div className="bg-[#054e82]">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a
-            nostrum. Dolorem, repellat quidem ut, minima sint vel eveniet
-            quibusdam voluptates delectus doloremque, explicabo tempore dicta
-            adipisci fugit amet dignissimos?
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequatur sit commodi beatae optio voluptatum sed eius cumque,
-            delectus saepe repudiandae explicabo nemo nam libero ad, doloribus,
-            voluptas rem alias. Vitae?
+            <p>First person to reach 5</p>
+            <p>Winner in 5 minutes</p>
           </div>
           <div>
             {/* <button
@@ -44,6 +36,6 @@ const InstructionsPopup = () => {
       )}
     </Popup>
   );
-};
+}
 
-export default InstructionsPopup;
+export default GameChoicePopup
