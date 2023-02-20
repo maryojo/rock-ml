@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route }
 import Intro from './pages/intro';
 import Play from './pages/play';
 import Game from './pages/game';
+import Test from './pages/test';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Intro />} />
         <Route path="/play" element={<Play />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </Router>
   );
